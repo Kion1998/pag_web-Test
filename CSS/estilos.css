@@ -1,0 +1,115 @@
+/* esto es un comentario <3 */ 
+/*Al usar body etiquetamos a toda la pagina en si o todos las etiquetas llamadas body  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li{
+    color: rgb(0, 0, 0);
+    list-style: none;
+    font-style: arial black;
+    font-size: 30px;
+    display: flex;
+}
+
+form{
+    color: brown;
+}
+
+/* para usar una clase usamos el .(nombre de la clase) y se agrega con el atributo class */
+.Parcolor{
+    text-decoration: none; /*Para que el parrafo no aparezca seleccionado */
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    list-style: none; /*se utiliza para sacar los puntos de la lista */
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.ParrafoSeleccion{
+    text-decoration: none;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Alumni Sans Inline One', cursive;
+
+}
+    
+.ParrafoSeleccion:hover{
+    color: rgb(0, 4, 255);
+}
+#titulo_unico {
+    font-size: 50px; /*Tamaño de la fuente del texto*/
+    text-align: center; /*Esto sirve para alinear al centro del texto*/
+    color: rgb(23, 14, 143);
+    width: 50;
+    /*font-family: 'Playfair Display', serif;*/
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Esto es para hacer colores degradados */
+.gradiente {
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: center;
+    color: rgb(6, 12, 12);
+    /*flex-direction: row; en lugar de ser verticales sean horizontales
+    justify-content: space-between; las lineas son distribuidas uniformemente en el contenedor*/
+}
+
+.gradiente2{
+    background: radial-gradient(circle, rgba(30,68,30,1) 72%, rgba(0,116,180,0.8954545454545455) 100%);
+    text-align: inherit;
+    width: auto;
+    height: center;
+    padding: center;
+    color: blue;
+    list-style: none;
+}
+.detalle{
+    background-image: url(../Imagen\ fonodo/fondo4.jpg); /* Este comando sirve para colocar una imagen de fondo de pantalla y es comando ../ es para retroceder una carpeta */
+    padding: 20px; /* el padding sirve para ajustar el tamaño de la imagen */
+    /*background-position: left center; /*Acomoda la imagen donde se indique */
+    /*background-size: 400px;*/
+    /*background-repeat: no-repeat;*/
+    min-height: 120px;
+    list-style: none;
+    background-size: cover;
+    background-attachment: fixed; /*  */
+}
+
+.lista{
+    background-position: center;
+    background-size: 400px;
+    font-size: 30px;
+}
+
+.unico_parrafo{
+    display: flex;
+    font-size: 30px;
+    color:black;    
+    background-position: center;
+}
+
+.video{
+    font-size: 60px;
+}
+
+.armado{
+    display: flex;
+    background-position: left;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.tex{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 30px;
+    border: rgb(5, 28, 238) 10px dotted;
+}

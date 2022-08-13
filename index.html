@@ -1,89 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller Especializado</title>
+    <!--Vinculacion de hoja de estilo css-->
+    <link rel="stylesheet" href="CSS/estilos.css">
 </head>
+
 <body>
-    <header>
+    <header class="detalle">
         <div>
-            <h1>Bienvenido al taller mecanico (nombre a elegir)</h1>
+            <h1 id="titulo_unico">Bienvenido al taller mecanico (nombre a elegir)</h1>
         </div>
-        <div>
-            <h2><a href="prueba2.html" target="_blank">Ir a la pagina de consultas</a></h2>
-        </div>  
-        <div>
-            <h2><a href="historia.html" target="_blank">Conoce mas de nosotros</a></h2>
+        <div class="Parcolor">
+            <h2 ><a href="prueba2.html" target="_blank" class="ParrafoSeleccion">Ir a la pagina de consultas</a></h2>
+            <h2 ><a href="historia.html" target="_blank" class="ParrafoSeleccion">Conoce mas de nosotros</a></h2>
         </div>
+        <section>
+            <div>
+                <ul class="lista">
+                    <div class="armado">
+                            <li class="tex">ARMADO DE MOTORES:
+                            <br>Armamos completamente de cero un motor, dando mantenimiento general 
+                            y asegurando el buen funcionamiento mecanico del motor, ademas de cambiar manguerras y demas piezas obsoletas
+                        del motor</li>
+                        <img src="Imagenes/aplicaciones-aprender-mecanica.jpg" alt="" width="500" height="250">
+                    </div>
+                    <div class="armado">
+                        <img src="Imagenes/frenos.jpg" alt="" width="500" height="250">
+                        <li class="tex">FRENOS:<br> Realizamos mantenimiento general de los frenos de el vehiculo adema
+                        de asegurar su funcionamiento al 100% y garantizar la seguridad que se necesita en su vehiculo para poder
+                        manejar de manera tranquila</li>
+                    </div>
+                    <div class="armado">
+                        <li class="tex">TREN DELANTERO: <br> Ofrecemos el servicio basico desde cambiar extremos de direccion hasta una alineacion
+                        avanzada del vehiculo, camio de caja de direccion, cambio de amortiguadores entre otros servicios que ofrecemos.</li>
+                        <img src="Imagenes/trendelantero.jpg" alt="" width="500" height="250">
+                    </div >
+                    <div class="armado">
+                        <img src="Imagenes/bombaagua.jpg" alt="" width="500" height="250">
+                        <li>Bomba de agua</li>
+                    </div>
+                    <div class="armado">
+                        <li>Cambios de aceite</li>
+                        <img src="Imagenes/cambiaceite.jpg" alt="" width="500" height="250">
+                    </div>
+                    <div class="armado">
+                        <img src="Imagenes/correa.jpg" alt="" width="500" height="250">
+                        <li>Cambios de correa de distribucion</li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </section>
     </header>
 
-    <main>
-        <div>
-            <ul>
-                <li>Armado de motores</li>
-                <li>frenos</li>
-                <li>Tren delantero</li>
-                <li>Bomba de agua</li>
-                <li>Cambios de aceite</li>
-                <li>Cambios de correa de distribucion</li>
-            </ul>
-        </div>
-        <div>
-            <img src="Imagenes/aplicaciones-aprender-mecanica.jpg" alt="" width="400" height="300"   >
-            <img src="Imagenes/Chevrolet-Corsa.jpg" alt=" "width="400" height="300">
-            <img src="Imagenes/depositphotos_78228962-stock-photo-mechanic-using-a-wrench-and.jpg" alt="" width="400" height="300">
+    <main class="detalle">
+        <!--<div>
+            <img src="Imagenes/aplicaciones-aprender-mecanica.jpg" alt="" width="400" height="300">
+            <img src="Imagenes/Chevrolet-Corsa.jpg" alt=" " width="400" height="300">
+            <img src="Imagenes/depositphotos_78228962-stock-photo-mechanic-using-a-wrench-and.jpg" alt="" width="400"
+                height="300">
             <img src="Imagenes/MECANICA.png" alt="" width="400" height="300">
             <img src="Imagenes/reparar-el-coche.jpg" alt="" width="400" height="300">
             <img src="Imagenes/motor-diésel-1080x600.jpg" alt="" width="400" height="300">
-            <video src="Imagenes/¿Cómo funciona un motor diesel_ (Animación).mp4"controls></video>
+        </div> -->
+        <div class="video">
+            <p>¿Como funciona un motor diesel?</p>
+       </div> 
+       <div class="unico_parrafo">
+            <video src="Imagenes/¿Cómo funciona un motor diesel_ (Animación).mp4" controls width="600"></video>
+            <p >Te explicamos en el video un poco sobre como funciona un motor para que puedas entender mejor el funcionamiento de tu auto</p>
         </div>
     </main>
-    
 
-
-    <h2>Para otras consultas complete el siguiente formulario: </h2>
-    <form action="" method="" enctype="">
-        <div>
-            <label for="Nombre">Nombre: </label> <!-- label para mostrar el texto en pantalaa -->
-            <input type="text" id="Nombre" placeholder="Ingresa el nombre completo" name="Nombre"><!-- input funciona para ingresar el texto -->
+    <section class="detalle">
+        <h2>Para otras consultas complete el siguiente formulario: </h2>
+        <form action="" method="" enctype="">
+            <div>
+                <label for="Nombre">Nombre: </label> <!-- label para mostrar el texto en pantalaa -->
+                <input type="text" id="Nombre" placeholder="Ingresa el nombre completo" name="Nombre">
+            <!-- input funciona para ingresar el texto -->
             <!-- el for se usa para cuando hacen click en nombre se meta en el input ya que id del input es nombre -->
-        </div>
+            </div>
         <!-- <br>el br sirve para saltear un renglon -->
-        <div>
-            <label for="email">Email:</label>
-            <input type="Email" id="email" placeholder="Ingrese su Email" name="Email"> <!-- Al poner type="Email" reconoce todos los email anteriores -->
-        </div>
-        <div>
-            <label for="tipo">Tipo de consulta</label>
-            <select name="tipo" id="tipo"> <!-- El select funciona para poder aparecer un menu desplegable donde selecciona
+            <div>
+                <label for="email">Email:</label>
+                <input type="Email" id="email" placeholder="Ingrese su Email" name="Email">
+            <!-- Al poner type="Email" reconoce todos los email anteriores -->
+            </div>
+            <div>
+                <label for="tipo">Tipo de consulta</label>
+                <select name="tipo" id="tipo">
+                <!-- El select funciona para poder aparecer un menu desplegable donde selecciona
             una de las option que estan debajo (Las option son los posibles seleccionables) -->
                 <option value="Ayuda">Precios</option>
                 <option value="Comprar">Horarios</option>
                 <option value="Metodo de envio">Metodos de pago</option>
-            </select>
-        </div>
-        <div>
-            <label for="comentario">Ingrese su consulta: </label>
-            <textarea name="comentario" id="comentario" placeholder="Ingresa su consulta aqui: " cols="25" rows="1"></textarea>
+                </select>
+            </div>
+            <div>
+                <label for="comentario">Ingrese su consulta: </label>
+                <textarea name="comentario" id="comentario" placeholder="Ingresa su consulta aqui: " cols="25"
+                    rows="1"></textarea>
             <!-- textarea es un recuadro para ingresar textos largos, cols es el ancho de el recuadro y rows es el alto del recuadro
             de texto para ingresar -->
-        </div>
-        <div>
-            <input type="submit" value="Enviar">
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
             <!-- <button>Enviar: </button> button sirve para enviar  -->
-        </div>
-    </form>
-    <footer>
+            </div>
+        </form>
+    </section>
+    
+    <footer class="detalle">
         <div>
-            <a href="https://www.instagram.com/" target="_blank"><img src="Imagenes/logos/instagram-logo.png" height="50" width="50"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="Imagenes/logos/124010.png" height="50" width="50"></a>
-            <a href="" target="_blank"><img src="Imagenes/logos/png-transparent-iphone-whatsapp-logo-whatsapp-call-icon-grass-mobile-phones-instant-messaging.png" height="50" width="50"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Imagenes/logos/instagram-logo.png"
+                    height="50" width="50"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="Imagenes/logos/124010.png" height="50"
+                    width="50"></a>
+            <a href="https://wa.me/5492914400074" target="_blank"><img
+                    src="Imagenes/logos/png-transparent-iphone-whatsapp-logo-whatsapp-call-icon-grass-mobile-phones-instant-messaging.png"
+                    height="50" width="50"></a>
         </div>
         <div>
             <h3>Todos los derechos reservados</h3>
         </div>
     </footer>
 </body>
+
 </html>
